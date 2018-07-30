@@ -50,45 +50,6 @@ public:
 	struct FVOscillator PositionalOscillation;
 
 	/************************************************************
-	* Animation stuff.
-	************************************************************/
-
-	/** Scalar defining how fast to play the animation. */
-	UPROPERTY(EditAnywhere, Category = "Animation", meta = (ClampMin = "0.001"))
-	float AnimationPlayRate;
-
-	/** Scalar defining how "intense" to play the animation. */
-	UPROPERTY(EditAnywhere, Category = "Animation", meta = (ClampMin = "0.0"))
-	float AnimationScale;
-
-	/** Linear blend-in time. */
-	UPROPERTY(EditAnywhere, Category = "Animation", meta = (ClampMin = "0.0"))
-	float AnimationBlendInTime;
-
-	/** Linear blend-out time. */
-	UPROPERTY(EditAnywhere, Category = "Animation", meta = (ClampMin = "0.0"))
-	float AnimationBlendOutTime;
-
-	/** When bRandomAnimSegment is true, this defines how long the animation should play. */
-	UPROPERTY(EditAnywhere, Category = "Animation", meta = (ClampMin = "0.0", editcondition = "bRandomAnimSegment"))
-	float RandomAnimationSegmentDuration;
-
-	/** Source camera animation to play. Can be null. */
-	UPROPERTY(EditAnywhere, Category = "Animation")
-	class UShakerAnimation* Animation;
-
-	/** The playing instance of the CameraAnim-based shake, if any. */
-	UPROPERTY(transient, BlueprintReadOnly, Category = "Shake")
-	class UShakerAnimationInstance* AnimationInstance;
-
-	/**
-	* If true, play a random snippet of the animation of length Duration.  Implies bLoop and bRandomStartTime = true for the CameraAnim.
-	* If false, play the full animation once, non-looped. Useful for getting variety out of a single looped CameraAnim asset.
-	*/
-	UPROPERTY(EditAnywhere, Category = "Animation")
-	uint32 bRandomAnimationSegment : 1;
-
-	/************************************************************
 	* Transient stuff.
 	************************************************************/
 
@@ -165,7 +126,4 @@ protected:
 
 	/** Initial offset (could have been assigned at random). */
 	FVector InitialRotSinOffset;
-
-	/** Temp actor to use for playing camera animations. Used when playing an animation in non-gameplay context, e.g. in the editor */
-	AActor* TempActorForAnimations;
 };

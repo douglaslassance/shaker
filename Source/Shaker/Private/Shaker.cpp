@@ -7,8 +7,6 @@
 void FShakerModule::StartupModule()
 {
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module
-	UE_LOG(LogTemp, Warning, TEXT("Initializing shake module."));
-
 }
 
 void FShakerModule::ShutdownModule()
