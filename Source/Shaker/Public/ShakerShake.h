@@ -65,9 +65,9 @@ public:
 	* Blueprint functions.
 	************************************************************/
 
-	/** Called every tick to let the shake modify the point of view */
+	/** Called every tick to let the shake modify the component transform. */
 	UFUNCTION(BlueprintImplementableEvent, Category = "Shake")
-	void ReceiveTick(float DeltaTime, float Alpha, FTransform& ShakeTransform);
+	void ReceiveTick(float DeltaTime, float Alpha, FTransform& Offset);
 
 	/** Called when the shake starts playing */
 	UFUNCTION(BlueprintImplementableEvent, Category = "Shake")
@@ -90,7 +90,7 @@ public:
 
 	virtual void Play(UShakerComponent* ShakerComponent, float Scale);
 
-	virtual void Tick(float DeltaTime, float Alpha, FTransform& ShakeTransform);
+	virtual void Tick(float DeltaTime, float Alpha, FTransform& Offset);
 
 	virtual bool IsFinished() const;
 

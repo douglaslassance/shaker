@@ -83,7 +83,7 @@ void UShakerShake::Play(UShakerComponent* Shaker, float Scale)
 	ReceivePlay(Scale);
 }
 
-void UShakerShake::Tick(float DeltaTime, float Alpha, FTransform& ShakeTransform)
+void UShakerShake::Tick(float DeltaTime, float Alpha, FTransform& Offset)
 {
 	// This is the base scale for the whole shake oscillation.
 	float const BaseShakeScale = FMath::Max<float>(Alpha * CurrentScale, 0.0f);
@@ -167,12 +167,12 @@ void UShakerShake::Tick(float DeltaTime, float Alpha, FTransform& ShakeTransform
 			RotOffset.Roll = FFOscillator::UpdateOffset(RotationalOscillation.Roll, RotSinOffset.Z, DeltaTime) * OscillationScale;
 
 			// Applying the transforms to input transform struct.
-			ShakeTransform.AddToTranslation(LocOffset);
-			ShakeTransform.ConcatenateRotation(RotOffset.Quaternion());
+			Offset.AddToTranslation(LocOffset);
+			Offset.ConcatenateRotation(RotOffset.Quaternion());
 		}
 	}
 
-	ReceiveTick(DeltaTime, Alpha, ShakeTransform);
+	ReceiveTick(DeltaTime, Alpha, Offset);
 }
 
 bool UShakerShake::IsFinished() const
