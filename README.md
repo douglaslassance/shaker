@@ -10,6 +10,6 @@ Feel free to use the issues pages for feedback.
 
 Do not hesitate to issue a pull request for features or ports.
 
-## Donations
+## Donation
 
 I left this project open source but the plugins is available on the marketplace for $4.99. If you want to support me financially just buy it from there with all the ease of use it implies.
