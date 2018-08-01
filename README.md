@@ -1,6 +1,6 @@
 # Shaker
 
-Shaker is a plugin for Unreal Engine 4 inspired from the built-in camera shake system. It provides a scene component and a generic shake blueprint class allowing to shake any actor your level. Download the example project to get a clearer idea on how to use the plugin.
+Shaker is a plugin for Unreal Engine 4 inspired from the built-in camera shake system. It provides a scene component and a generic shake blueprint class allowing to shake any actor your level. Download the [example project](https://github.com/douglaslassance/shaker-example) to get a clearer idea on how to use the plugin.
 
 ## Support
 
