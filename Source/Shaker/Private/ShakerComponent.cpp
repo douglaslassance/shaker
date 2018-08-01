@@ -1,7 +1,7 @@
 // Copyright (c) 2017 Douglas Lassance. All rights reserved.
 
-#include "Shaker.h"
 #include "ShakerComponent.h"
+#include "Shaker.h"
 #include "ShakerShake.h"
 
 UShakerComponent::UShakerComponent(const FObjectInitializer& ObjectInitializer)
