@@ -1,7 +1,8 @@
-// Copyright (c) 2017 Douglas Lassance. All rights reserved.
+// Copyright (c) 2018 Douglas Lassance. All rights reserved.
 
 #pragma once
 
+#include "Shaker.h"
 #include "Components/SceneComponent.h"
 #include "ShakerComponent.generated.h"
 

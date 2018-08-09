@@ -1,4 +1,4 @@
-// Copyright (c) 2017 Douglas Lassance. All rights reserved.
+// Copyright (c) 2018 Douglas Lassance. All rights reserved.
 
 using UnrealBuildTool;
 
@@ -7,8 +7,9 @@ public class Shaker : ModuleRules
 	public Shaker(ReadOnlyTargetRules Target)
         : base(Target)
     {
-		
-		PublicIncludePaths.AddRange(
+        PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+
+        PublicIncludePaths.AddRange(
 			new string[] {
 				"Shaker/Public"
 				// ... add public include paths required here ...

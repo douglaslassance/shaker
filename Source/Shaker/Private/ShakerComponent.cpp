@@ -1,4 +1,4 @@
-// Copyright (c) 2017 Douglas Lassance. All rights reserved.
+// Copyright (c) 2018 Douglas Lassance. All rights reserved.
 
 #include "ShakerComponent.h"
 #include "Shaker.h"
