@@ -1,4 +1,4 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+// Copyright (c) 2018 Douglas Lassance. All rights reserved.
 
 #pragma once
 

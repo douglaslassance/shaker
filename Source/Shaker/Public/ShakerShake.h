@@ -1,10 +1,11 @@
-// Copyright (c) 2017 Douglas Lassance. All rights reserved.
+// Copyright (c) 2018 Douglas Lassance. All rights reserved.
 
 #pragma once
 
+#include "Shaker.h"
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "Camera/CameraShake.h"
+#include "UObject/NoExportTypes.h"
 #include "ShakerShake.generated.h"
 
 class UShakerComponent;
