@@ -12,4 +12,4 @@ Do not hesitate to issue a pull request for features or ports.
 
 ## Donation
 
-I left this project open source but the plugin is available on the marketplace for $4.99. If you want to support me financially just buy it there and get all the ease of use it implies.
+I left this project open source but the plugin is available on the [marketplace](https://www.unrealengine.com/marketplace/en-US/product/shaker) for $4.99. If you want to support me financially just buy it there and get all the ease of use it implies.
