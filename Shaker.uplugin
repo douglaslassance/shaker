@@ -2,7 +2,7 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
-	"EngineVersion": "4.20.0",
+	"EngineVersion": "4.26.0",
 	"WhitelistPlatforms": [ "Win64", "Win32", "Mac", "XboxOne", "PS4", "IOS", "Android", "HTML5", "Linux" ],
 	"FriendlyName": "Shaker",
 	"Description": "Shake anything and everything!",
@@ -18,7 +18,7 @@
 	"Modules": [
 		{
 			"Name": "Shaker",
-			"Type": "Developer",
+			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}
 	]
