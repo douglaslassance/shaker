@@ -29,8 +29,6 @@ void UShakerShake::Play(UShakerComponent* Shaker, float Scale)
 {
 	CurrentScale = Scale;
 
-	UE_LOG(LogTemp, Warning, TEXT("Playing shake."));
-
 	// Initializing oscillations.
 	if (OscillationDuration != 0.f)
 	{

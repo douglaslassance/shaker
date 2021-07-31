@@ -154,7 +154,6 @@ void UShakerComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 
 	// Update and apply active shakes.
 	if (ActiveShakes.Num() > 0)
-		UE_LOG(LogTemp, Warning, TEXT("Found active shake."));
 	{ 
 		// Initializing our transform struct.
 		FTransform ShakeTransform;
