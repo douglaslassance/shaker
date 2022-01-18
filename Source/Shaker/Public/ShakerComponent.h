@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include "Shaker.h"
 #include "Components/SceneComponent.h"
 #include "ShakerComponent.generated.h"
 

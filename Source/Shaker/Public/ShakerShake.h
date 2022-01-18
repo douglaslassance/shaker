@@ -2,10 +2,9 @@
 
 #pragma once
 
-#include "Shaker.h"
 #include "CoreMinimal.h"
-#include "Camera/CameraShake.h"
 #include "UObject/NoExportTypes.h"
+#include "GameplayCameras/Public/MatineeCameraShake.h"
 #include "ShakerShake.generated.h"
 
 class UShakerComponent;

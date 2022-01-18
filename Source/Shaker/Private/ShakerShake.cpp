@@ -1,7 +1,6 @@
 // Copyright (c) 2018 Douglas Lassance. All rights reserved.
 
 #include "ShakerShake.h"
-#include "Shaker.h"
 #include "ShakerComponent.h"
 
 UShakerShake::UShakerShake()
