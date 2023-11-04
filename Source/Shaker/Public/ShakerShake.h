@@ -3,8 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "GameplayCameras/Public/MatineeCameraShake.h"
+#include "LegacyCameraShake.h"
 #include "ShakerShake.generated.h"
 
 class UShakerComponent;
