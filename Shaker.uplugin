@@ -24,7 +24,7 @@
 	],
 	"Plugins": [
     {
-      "Name": "GameplayCameras",
+      "Name": "EngineCameras",
       "Enabled": true
     }
   ]
