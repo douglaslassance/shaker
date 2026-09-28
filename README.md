@@ -16,4 +16,4 @@ Shaker is source available under the [PolyForm Shield License 1.0.0](LICENSE). Y
 
 ## Donation
 
-The plugin is also available on [Fab](https://www.unrealengine.com/marketplace/en-US/product/shaker) for $4.99. If you want to support me financially just buy it there and get all the ease of use it implies.
+The plugin is also available on [Fab](https://www.fab.com/listings/2b212310-b64d-437f-8727-98ceda15ac39) for $4.99. If you want to support me financially just buy it there and get all the ease of use it implies.
