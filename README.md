@@ -10,6 +10,10 @@ Feel free to use the issues pages for feedback.
 
 Do not hesitate to issue a pull request for features or ports.
 
+## License
+
+Shaker is source available under the [PolyForm Shield License 1.0.0](LICENSE). You can use it for free in any project, including commercial games. You cannot sell or redistribute it as a competing plugin.
+
 ## Donation
 
-I left this project open source but the plugin is available on the [marketplace](https://www.unrealengine.com/marketplace/en-US/product/shaker) for $4.99. If you want to support me financially just buy it there and get all the ease of use it implies.
+The plugin is also available on [Fab](https://www.unrealengine.com/marketplace/en-US/product/shaker) for $4.99. If you want to support me financially just buy it there and get all the ease of use it implies.
