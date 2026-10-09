@@ -16,7 +16,8 @@ UShakerComponent::UShakerComponent(const FObjectInitializer& ObjectInitializer)
 
 UShakerShake* UShakerComponent::PlayShake(TSubclassOf<class UShakerShake> Shake, float Scale)
 {
-	if (Shake != nullptr)
+	// The base Shake class is abstract; only Blueprint subclasses can be played.
+	if (Shake != nullptr && !Shake->HasAnyClassFlags(CLASS_Abstract))
 	{
 		UShakerShake const* const ShakeCDO = GetDefault<UShakerShake>(Shake);
 		if (ShakeCDO && ShakeCDO->bSingleInstance)

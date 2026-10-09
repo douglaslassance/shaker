@@ -20,7 +20,7 @@ public:
 	TArray<UShakerShake*> ActiveShakes;
 
 	UFUNCTION(BlueprintCallable, Category = "Actor|Component|Shaker")
-	virtual UShakerShake* PlayShake(TSubclassOf<class UShakerShake> Shake, float Scale = 1.f);
+	virtual UShakerShake* PlayShake(UPARAM(meta = (AllowAbstract = "false")) TSubclassOf<class UShakerShake> Shake, float Scale = 1.f);
 
 	UFUNCTION(BlueprintCallable, Category = "Actor|Component|Shaker")
 	virtual void StopShake(UShakerShake* Shake, bool bImmediately = true);
@@ -29,7 +29,7 @@ public:
 	virtual void StopAllShakes(bool Immediately = true);
 
 	UFUNCTION(BlueprintCallable, Category = "Actor|Component|Shaker")
-	virtual void StopAllInstancesOfShake(TSubclassOf<UShakerShake> Shake, bool bImmediately = true);
+	virtual void StopAllInstancesOfShake(UPARAM(meta = (AllowAbstract = "false")) TSubclassOf<UShakerShake> Shake, bool bImmediately = true);
 
 	virtual void UpdateAlpha(float DeltaTime);
 
