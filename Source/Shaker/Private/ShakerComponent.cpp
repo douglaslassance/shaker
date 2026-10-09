@@ -113,23 +113,24 @@ float UShakerComponent::GetTargetAlpha()
 
 void UShakerComponent::UpdateAlpha(float DeltaTime)
 {
-	float const BlendTime = (1.0f == 0.f) ? AlphaOutTime : AlphaInTime;
+	float const TargetAlpha = GetTargetAlpha();
+	float const BlendTime = (TargetAlpha == 0.f) ? AlphaOutTime : AlphaInTime;
 
 	// Interpolate!
 	if (BlendTime <= 0.f)
 	{
 		// No blend time means no blending, just go directly to target alpha.
-		Alpha = 1.0f;
+		Alpha = TargetAlpha;
 	}
-	else if (Alpha > 1.0)
+	else if (Alpha > TargetAlpha)
 	{
 		// Interpolate downward to target, while protecting against overshooting.
-		Alpha = FMath::Max<float>(Alpha - DeltaTime / BlendTime, 1.f);
+		Alpha = FMath::Max<float>(Alpha - DeltaTime / BlendTime, TargetAlpha);
 	}
 	else
 	{
 		// Interpolate upward to target, while protecting against overshooting.
-		Alpha = FMath::Min<float>(Alpha + DeltaTime / BlendTime, 1.f);
+		Alpha = FMath::Min<float>(Alpha + DeltaTime / BlendTime, TargetAlpha);
 	}
 }
 
