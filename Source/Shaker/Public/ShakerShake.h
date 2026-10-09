@@ -8,7 +8,7 @@
 
 class UShakerComponent;
 
-UCLASS(Blueprintable, editinlinenew, meta = (DisplayName = "Shake"))
+UCLASS(Abstract, Blueprintable, editinlinenew, meta = (DisplayName = "Shake"))
 class SHAKER_API UShakerShake : public UObject
 {
 	GENERATED_BODY()
