@@ -6,14 +6,10 @@ Shaker is a plugin for Unreal Engine inspired from the built-in camera shake sys
 
 If your project is on Git, the recommended setup is to [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) this repository in your `Plugins` folder.
 
-## Issues
+## Support
 
 Feel free to use the issues pages for feedback.
 
 ## Contribution 
 
 Do not hesitate to issue a pull request for features or ports.
-
-## Support
-
-Donations are welcome.
